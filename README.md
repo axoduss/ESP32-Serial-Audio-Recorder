@@ -4,15 +4,47 @@ Progetto per registrare audio da microfono **INMP441** utilizzando **ESP32** e s
 
 ---
 
+
 ## 📁 Struttura del Progetto
 
 
 
-## 🛠️ Requisiti Hardware
+## 🔧 Hardware Requirements
 
-### 🔌 Collegamenti INMP441 → ESP32
+|      Component     | Quantity |                      Notes                      |
+|------------------|:--------:|-----------------------------------------------|
+| ESP32-S3 Dev Board | 1x       | Any ESP32-S3 variant (e.g., ESP32-S3-DevKitC-1) |
+| INMP441 Microphone | 1x       | I2S omnidirectional MEMS microphone             |
+| Jumper Wires       | 5x       | For connecting microphone to ESP32              |
+| USB Cable          | 1x       | For programming and power                       |
 
-## 💻 Requisiti Software
+## 🔌 Wiring Diagram
+
+|      INMP441     | ESP32		 |
+|------------------|:-------------:|
+| VDD 				| 3.3V       | 
+| GND				| GND       |
+| WS      			| GPIO       | 
+| SCK          		| GPIO       | 
+| SD 				| GPIO
+| L/R 				| GND		|
+
+
+
+
+## 💻 Software Requirements
+On ESP32-S3
+- Arduino IDE 2.x
+- ESP32 Arduino Core 3.x (by Espressif)
+
+On PC/Server
+- Python 3.8+
+- Dependencies: 
+> pip install pyserial
+
+or
+
+> py -m pip install pyserial
 
 
 ## 🚀 Installazione e Configurazione
