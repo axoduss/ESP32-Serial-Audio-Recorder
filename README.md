@@ -6,11 +6,7 @@ Progetto per registrare audio da microfono **INMP441** utilizzando **ESP32** e s
 
 ## 📁 Struttura del Progetto
 
-.
-├── Arduino/              # Codice sorgente per ESP32 (.ino)
-├── MyPC/                 # Script Python per catturare l'audio (record_audio.py)
-├── AudioSample/          # Esempio di registrazione (.wav)
-└── README.md             # Questo file
+
 
 ## 🛠️ Requisiti Hardware
 
