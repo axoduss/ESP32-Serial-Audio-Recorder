@@ -5,9 +5,6 @@ Progetto per registrare audio da microfono **INMP441** utilizzando **ESP32** e s
 ---
 
 
-## 📁 Struttura del Progetto
-
-
 
 ## 🔧 Hardware Requirements
 
@@ -24,9 +21,9 @@ Progetto per registrare audio da microfono **INMP441** utilizzando **ESP32** e s
 |------------------|:-------------:|
 | VDD 				| 3.3V       | 
 | GND				| GND       |
-| WS      			| GPIO       | 
-| SCK          		| GPIO       | 
-| SD 				| GPIO
+| WS      			| GPIO 5       | 
+| SCK          		| GPIO 6       | 
+| SD 				| GPIO 4
 | L/R 				| GND		|
 
 
