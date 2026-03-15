@@ -49,18 +49,18 @@ or
 
 ## 🚀 Installazione e Configurazione
 
-1. Arduino IDE
-Apri il file .ino nella cartella Arduino/
-Modifica i pin I2S se necessario (vedi sezione collegamenti)
-Imposta il baud rate (consigliato: 2000000 per qualità migliore)
-Carica il codice sull'ESP32
-2. Script Python
-Apri il file MyPC/record_audio.py
-Modifica la porta seriale in base al tuo sistema:
-python
+Arduino IDE
 
-SERIAL_PORT = 'COM3'  # Windows (controlla in Gestione Dispositivi)
-# SERIAL_PORT = '/dev/ttyUSB0'  # Linux/Mac
+- Apri il file .ino
+- Modifica i pin I2S se necessario (vedi sezione collegamenti)
+- Imposta il baud rate (consigliato: 2000000 per qualità migliore)
+- Carica il codice sull'ESP32
+
+Script Python
+- Apri il file MyPC/record_audio.py
+- Modifica la porta seriale in base al tuo sistema:
+
+> SERIAL_PORT = 'COM3'  
 
 
 Assicurati che BAUD_RATE e SAMPLE_RATE corrispondano al codice Arduino
@@ -69,17 +69,15 @@ Assicurati che BAUD_RATE e SAMPLE_RATE corrispondano al codice Arduino
 
 ## ▶️ Come Usare
 
-Chiudi Arduino IDE o il Monitor Seriale (la porta COM deve essere libera)
-Collega l'ESP32 al PC
-Apri il terminale nella cartella MyPC/
-Esegui lo script:
-
-python record_audio.py
-
-Parla nel microfono (vedrai dei puntini ... mentre registra)
-Premi Ctrl+C per fermare la registrazione
-Il file registrazione.wav verrà salvato nella stessa cartella
-Apri il file con un lettore audio (VLC, Windows Media Player, ecc.)
+- Chiudi Arduino IDE o il Monitor Seriale (la porta COM deve essere libera)
+- Collega l'ESP32 al PC
+- Apri il terminale nella cartella MyPC/
+- Esegui lo script:
+> python record_audio.py
+- Parla nel microfono (vedrai dei puntini ... mentre registra)
+- Premi Ctrl+C per fermare la registrazione
+- Il file registrazione.wav verrà salvato nella stessa cartella
+- Apri il file con un lettore audio (VLC, Windows Media Player, ecc.)
 
 
 ## 🤝 Contributi
